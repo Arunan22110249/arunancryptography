@@ -1,7 +1,0 @@
-region = "us-ashburn-1"
-compartment_ocid = "ocid1.compartment.oc1..example"
-availability_domain = "AD-1"
-ssh_public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC..."
-vm_shape = "VM.Standard.A1.Flex"
-vm_ocpus = 1
-vm_memory_gb = 6
