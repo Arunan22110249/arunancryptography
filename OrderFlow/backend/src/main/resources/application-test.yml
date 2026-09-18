@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:orderflow-test;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+  flyway:
+    enabled: false
+  sql:
+    init:
+      mode: never
+
+app:
+  kafka:
+    enabled: false
+  rate-limit:
+    enabled: false
+  failure-injection:
+    enabled: false

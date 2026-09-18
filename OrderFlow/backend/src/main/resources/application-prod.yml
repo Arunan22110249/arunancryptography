@@ -1,0 +1,27 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    enabled: true
+  sql:
+    init:
+      mode: never
+
+app:
+  demo-mode: false
+  kafka:
+    enabled: true
+  rate-limit:
+    enabled: true
+  failure-injection:
+    enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
+  endpoint:
+    health:
+      show-details: when_authorized
